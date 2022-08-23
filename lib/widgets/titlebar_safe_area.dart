@@ -7,8 +7,7 @@ import 'package:flutter_acrylic/flutter_acrylic.dart';
 class _MacOSTitlebarSafeArea extends StatefulWidget {
   final Widget child;
 
-  const _MacOSTitlebarSafeArea({Key? key, required this.child})
-      : super(key: key);
+  const _MacOSTitlebarSafeArea({Key key, this.child}) : super(key: key);
 
   @override
   State<_MacOSTitlebarSafeArea> createState() => _MacOSTitlebarSafeAreaState();
@@ -50,7 +49,7 @@ class TitlebarSafeArea extends StatelessWidget {
   ///  child: Text('Hello World'),
   /// )
   /// ```
-  const TitlebarSafeArea({Key? key, required this.child}) : super(key: key);
+  const TitlebarSafeArea({Key key, this.child}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

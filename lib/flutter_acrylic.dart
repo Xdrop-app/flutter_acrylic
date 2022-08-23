@@ -278,7 +278,7 @@ class Window {
   /// ```
   ///
   static Future<void> setEffect({
-    required WindowEffect effect,
+    WindowEffect effect,
     Color color: Colors.transparent,
     bool dark: true,
   }) async {
@@ -598,7 +598,7 @@ class Window {
 
   /// Overrides the brightness setting of the window (macOS only).
   static Future<void> overrideMacOSBrightness({
-    required bool dark,
+    bool dark,
   }) async {
     await _kCompleter.future;
     await _kChannel.invokeMethod(
